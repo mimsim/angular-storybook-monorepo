@@ -39,6 +39,6 @@ angular-monorepo❯  npx nx run-many -t build
 
 
 # Add Storybook 
-nx add @nrwl/storybook
-nx generate @nrwl/angular:storybook-configuration angular-monorepo
-nx run angular-monorepo:storybook
+- nx add @nrwl/storybook
+- nx generate @nrwl/angular:storybook-configuration angular-monorepo
+- nx run angular-monorepo:storybook
