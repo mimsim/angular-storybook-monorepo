@@ -28,3 +28,11 @@ nx serve angular-monorepo
 
 # Visualizing your Project Structure
 nx graph
+
+# Testing and Linting - Running Multiple Tasks
+nx test angular-monorepo # runs the tests for angular-monorepo
+nx lint inventory # runs the linter on inventory
+nx e2e angular-monorepo-e2e # runs e2e tests for the angular-monorepo
+
+# Building the Apps for Deployment
+angular-monorepo❯  npx nx run-many -t build
