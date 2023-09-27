@@ -43,7 +43,6 @@
     "storybook:build:static:deploy:netlify": "nx run angular-nx-storybook-monorepo:storybook:build:static:deploy:netlify",
     "storybook:build:static:deploy:vercel": "nx run angular-nx-storybook-monorepo:storybook:build:static:deploy:vercel",
     "storybook:build:static:deploy:now": "nx run angular-nx-storybook-monorepo:storybook:build:static:deploy:now"
-
   },
   "private": true,
   "dependencies": {
@@ -55,7 +54,10 @@
     "@angular/platform-browser": "~16.2.0",
     "@angular/platform-browser-dynamic": "~16.2.0",
     "@angular/router": "~16.2.0",
+    "@nrwl/storybook": "^16.9.1",
     "@nx/angular": "16.9.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
@@ -74,8 +76,17 @@
     "@nx/jest": "16.9.1",
     "@nx/js": "16.9.1",
     "@nx/linter": "16.9.1",
+    "@nx/storybook": "16.9.1",
+    "@nx/web": "16.9.1",
     "@nx/workspace": "16.9.1",
     "@schematics/angular": "~16.2.0",
+    "@storybook/addon-essentials": "7.4.5",
+    "@storybook/addon-interactions": "^7.2.1",
+    "@storybook/angular": "7.4.5",
+    "@storybook/core-server": "7.4.5",
+    "@storybook/jest": "~0.1.0",
+    "@storybook/test-runner": "^0.13.0",
+    "@storybook/testing-library": "~0.2.0",
     "@types/jest": "^29.4.0",
     "@types/node": "16.11.7",
     "@typescript-eslint/eslint-plugin": "^5.60.1",

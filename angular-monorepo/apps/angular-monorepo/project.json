@@ -90,6 +90,53 @@
           "codeCoverage": true
         }
       }
+    },
+    "storybook": {
+      "executor": "@storybook/angular:start-storybook",
+      "options": {
+        "port": 4400,
+        "configDir": "apps/angular-monorepo/.storybook",
+        "browserTarget": "angular-monorepo:build",
+        "compodoc": false
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@storybook/angular:build-storybook",
+      "outputs": ["{options.outputDir}"],
+      "options": {
+        "outputDir": "dist/storybook/angular-monorepo",
+        "configDir": "apps/angular-monorepo/.storybook",
+        "browserTarget": "angular-monorepo:build",
+        "compodoc": false
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "test-storybook": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "test-storybook -c apps/angular-monorepo/.storybook --url=http://localhost:4400"
+      }
+    },
+    "static-storybook": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "angular-monorepo:build-storybook",
+        "staticFilePath": "dist/storybook/angular-monorepo"
+      },
+      "configurations": {
+        "ci": {
+          "buildTarget": "angular-monorepo:build-storybook:ci"
+        }
+      }
     }
   }
 }

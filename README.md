@@ -36,3 +36,9 @@ nx e2e angular-monorepo-e2e # runs e2e tests for the angular-monorepo
 
 # Building the Apps for Deployment
 angular-monorepo❯  npx nx run-many -t build
+
+
+# Add Storybook 
+nx add @nrwl/storybook
+nx generate @nrwl/angular:storybook-configuration angular-monorepo
+nx run angular-monorepo:storybook
