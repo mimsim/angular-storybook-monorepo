@@ -1,7 +1,9 @@
 # angular-storybook-monorepo
+
+Symple project used Storybook - Angular 16 / standalone components
 Monorepo: Nx + Storybook in Angular
 
-# install 
+# Install 
 npx create-nx-workspace@latest angular-monorepo --preset=angular-monorepo
 
 # Adding Another Application
@@ -17,5 +19,12 @@ nx g @nx/angular:library shared-ui --directory=libs/shared/ui --standalone
 
 
 ! All libraries that we generate automatically have aliases created in the root-level tsconfig.base.json.
-# create and expose a ProductListComponent component from our libs/products library. Either create it by hand or run
+# Create and expose a ProductListComponent component from our libs/products library. Either create it by hand or run
 nx g @nx/angular:component product-list --project=products --standalone --export
+
+
+# Serve
+nx serve angular-monorepo
+
+# Visualizing your Project Structure
+nx graph
