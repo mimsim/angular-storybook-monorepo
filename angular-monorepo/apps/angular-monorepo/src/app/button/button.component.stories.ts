@@ -11,9 +11,9 @@ const meta: Meta<ButtonComponent> = {
 export default meta;
 type Story = StoryObj<ButtonComponent>;
 
-export const Primary: Story = {
-  args: {},
-};
+// export const Primary: Story = {
+//   args: {},
+// };
 
 export const Heading: Story = {
   args: {},
@@ -22,3 +22,16 @@ export const Heading: Story = {
     expect(canvas.getByText(/button works!/gi)).toBeTruthy();
   },
 };
+export const Primary = () => ({
+  component: ButtonComponent,
+  props: {
+    label: 'Primary Button',
+  },
+});
+
+export const Secondary = () => ({
+  component: ButtonComponent,
+  props: {
+    label: 'Secondary Button',
+  },
+});
