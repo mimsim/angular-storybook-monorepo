@@ -1,1 +1,9 @@
 <p>button works!</p>
+<form id="interaction-test-form" (submit)="handleSubmit($event)">
+    <label>
+      Enter Value
+      <input type="text" data-testid="value" />
+    </label>
+    <button type="submit">Submit</button>
+    <p *ngIf="complete">Completed!!</p>
+  </form>

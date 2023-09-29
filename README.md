@@ -53,8 +53,5 @@ nx generate @nrwl/angular:module name --project=angular-monorepo
 angular-monorepo>
 nx generate @nrwl/angular:component name --project=angular-monorepo    
 
-
-<!-- # Generate stories
-nx g @nx/angular:stories --project=angular-monorepo 
-
-nx g @nx/angular:storybook-configuration angular-monorepo  -->
+# Generate stories
+nx g @nx/angular:stories --project=angular-monorepo
