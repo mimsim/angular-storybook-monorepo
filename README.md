@@ -43,4 +43,18 @@ angular-monorepo❯  npx nx run-many -t build
 - nx generate @nrwl/angular:storybook-configuration angular-monorepo
 
 # Serve storybook
-- nx run angular-monorepo:storybook
+- Monorepo-Storybook-Angular\angular-monorepo> nx run angular-monorepo:storybook
+
+# Generate module
+angular-monorepo>
+nx generate @nrwl/angular:module name --project=angular-monorepo    
+
+# Generate component
+angular-monorepo>
+nx generate @nrwl/angular:component name --project=angular-monorepo    
+
+
+<!-- # Generate stories
+nx g @nx/angular:stories --project=angular-monorepo 
+
+nx g @nx/angular:storybook-configuration angular-monorepo  -->
