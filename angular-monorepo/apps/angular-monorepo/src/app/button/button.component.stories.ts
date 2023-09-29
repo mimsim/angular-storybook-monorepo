@@ -25,7 +25,12 @@ export const Heading: Story = {
 export const Primary = () => ({
   component: ButtonComponent,
   props: {
+    primary: true,
+    // label: 'Primary Button',
     label: 'Primary Button',
+    text: 'Click me!',
+    padding: 10,
+    disabled: true,
   },
 });
 
@@ -33,5 +38,12 @@ export const Secondary = () => ({
   component: ButtonComponent,
   props: {
     label: 'Secondary Button',
+  },
+});
+
+export const Warn = () => ({
+  component: ButtonComponent,
+  props: {
+    label: 'Warn',
   },
 });

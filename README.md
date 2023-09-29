@@ -55,3 +55,7 @@ nx generate @nrwl/angular:component name --project=angular-monorepo
 
 # Generate stories
 nx g @nx/angular:stories --project=angular-monorepo
+
+# Generate all nessesery for one lib
+npx nx g @nx/angular:lib NAME --directory=module --standalone --SIMPLENAME --dry-run
+NOTE: The "dryRun" flag means no changes were made.

@@ -4,7 +4,7 @@ import { MaterialModule } from '../material.module';
 import { AppModule } from '../app.module';
 
 @Component({
-  selector: 'angular-monorepo-button',
+  selector: '[button]',
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.css'],
   standalone: true,
